@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">myPracticalThrus</string>
+    <string name="app_name">DiceRoller</string>
+    <string name="roll_label">Roll</string>
+    <string name="roll_label2">Count Up</string>
 </resources>
