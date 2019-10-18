@@ -30,5 +30,13 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/roll_label2" />
 
+    <Button
+        android:id="@+id/roll_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/roll_label3" />
+
+
 
 </LinearLayout>

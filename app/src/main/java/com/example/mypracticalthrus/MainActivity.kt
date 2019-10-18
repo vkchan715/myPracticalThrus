@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import java.lang.Double.parseDouble
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         val rollButton2: Button = findViewById(R.id.roll_button2)
         rollButton2.setOnClickListener{ countDice()}
 
+        val resetButton: Button = findViewById(R.id.roll_button3)
+        resetButton.setOnClickListener{ reset()}
+
     }
 
     private fun rollDice() {
@@ -37,10 +41,31 @@ class MainActivity : AppCompatActivity() {
     private fun countDice(){
         Toast.makeText(this, "Dice added",
             Toast.LENGTH_SHORT).show()
-        val resulttext: TextView = findViewById(R.id.result_text)
-        val number = "Hello"
 
-        resulttext.text = number
+        var rtext: TextView = findViewById(R.id.result_text)
+        var numeric = true
+        var str: String = rtext.text.toString()
+        try {
+            val num = parseDouble(str)
+        } catch (e: NumberFormatException) {
+            numeric = false
+        }
 
+        if(numeric){
+
+            var number: Int = Integer.parseInt(str) +1
+            rtext.text = number.toString()
+        }
+        else {
+           rtext.text =  "Hello World!"
+        }
+    }
+
+    private fun reset(){
+        Toast.makeText(this, "Reset Successfully!",
+            Toast.LENGTH_SHORT).show()
+
+        val rtext: TextView = findViewById(R.id.result_text)
+        rtext.text = "0"
     }
 }
