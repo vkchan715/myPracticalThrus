@@ -23,6 +23,47 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/roll_label" />
 
+    <TextView
+        android:id="@+id/rtext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/roll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/roll2" />
+
+    <TextView
+        android:id="@+id/rtext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/roll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/roll3" />
+
+    <TextView
+        android:id="@+id/totalresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/sumbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Sum" />
     <Button
         android:id="@+id/roll_button2"
         android:layout_width="wrap_content"
