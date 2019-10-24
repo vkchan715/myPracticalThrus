@@ -98,9 +98,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
         else {
-           rtext.text =  "Hello World!"
-            rtext2.text =  "Hello World!"
-            rtext3.text =  "Hello World!"
+           rtext.text =  "1"
+            rtext2.text =  "1"
+            rtext3.text =  "1"
         }
     }
 
